@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: font-1;
+  src: url(../fonts/Inter-ExtraBold.ttf);
+}
+@font-face {
+  font-family: font-2;
+  src: url(../fonts/Merriweather-Light.ttf);
+}
+body {
+  background: url(../img/bg.jpg) center/cover fixed;
+}
+
+body li {
+  list-style: none;
+}
+
+body a {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 100vw;
+  height: 100vh;
+  color: #f3f3f3;
+}
+header .mainHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+}
+header .mainHeader h1 {
+  font-family: "font-1", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 7px;
+  font-size: 5rem;
+  max-width: 800px;
+}
+header .mainHeader p {
+  font-family: "font-2", sans-serif;
+  font-style: italic;
+  text-align: center;
+  font-size: 1.3rem;
+  margin: 30px 0px;
+}
+header .mainHeader .mainHeaderButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #f3f3f3;
+  cursor: pointer;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  font-family: "font-1", sans-serif;
+  background: rgba(255, 255, 255, 0.2392156863);
+  margin: 0 auto;
+  width: 80%;
+  height: 70px;
+  letter-spacing: 1px;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  cursor: pointer;
+}
+header nav ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  padding: 0px 10px;
+  font-size: 0.8rem;
+  transition: 0.2s ease-in-out;
+}
+header nav ul li:hover {
+  background: #f3f3f3;
+  color: #000;
+}
+header nav ul .permHover {
+  background: #f3f3f3;
+  color: #000;
+}
+header nav ul:last-child {
+  justify-content: space-around;
+  width: 30%;
+}
+header nav ul:last-child li {
+  font-size: 1.2rem;
+  width: 100%;
+  padding: 0;
+}
+header nav ul:last-child li:hover {
+  font-size: 2rem;
+  background: initial;
+}
+header nav ul:last-child li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f3f3f3;
+  width: 100%;
+  height: 100%;
+}/*# sourceMappingURL=index.css.map */

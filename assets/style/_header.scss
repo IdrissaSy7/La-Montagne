@@ -1,0 +1,98 @@
+header {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 100vw;
+  height: 100vh;
+  color: $color-1;
+
+  .mainHeader {
+    @include center;
+    flex-direction: column;
+    margin: auto;
+
+    h1 {
+      font-family: "font-1", sans-serif;
+      text-transform: uppercase;
+      text-align: center;
+      letter-spacing: 7px;
+      font-size: 5rem;
+      max-width: 800px;
+    }
+
+    p {
+      font-family: "font-2", sans-serif;
+      font-style: italic;
+      text-align: center;
+      font-size: 1.3rem;
+      margin: 30px 0px;
+    }
+
+    .mainHeaderButton {
+      @include center;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      border: 2px solid $color-1;
+      cursor: pointer;
+    }
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    font-family: "font-1", sans-serif;
+    background: $color-2;
+    margin: 0 auto;
+    width: 80%;
+    height: 70px;
+    letter-spacing: 1px;
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+      height: 100%;
+      cursor: pointer;
+
+      li {
+        @include center;
+        text-transform: uppercase;
+        padding: 0px 10px;
+        font-size: 0.8rem;
+        transition: 0.2s ease-in-out;
+
+        &:hover {
+          background: $color-1;
+          color: $color-3;
+        }
+      }
+
+      .permHover {
+        background: $color-1;
+        color: $color-3;
+      }
+    }
+
+    ul:last-child {
+      justify-content: space-around;
+      width: 30%;
+
+      li {
+        font-size: 1.2rem;
+        width: 100%;
+        padding: 0;
+
+        &:hover {
+          font-size: 2rem;
+          background: initial;
+        }
+
+        a {
+          @include center;
+          color: $color-1;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
