@@ -24,6 +24,14 @@ body a {
   text-decoration: none;
 }
 
+.fsButton {
+  text-transform: uppercase;
+  background: transparent;
+  border: 2px solid #000;
+  padding: 15px 40px;
+  font-family: "font-1", sans-serif;
+}
+
 header {
   display: flex;
   flex-direction: column-reverse;
@@ -116,4 +124,69 @@ header nav ul:last-child li a {
   color: #f3f3f3;
   width: 100%;
   height: 100%;
+}
+
+section {
+  width: 80%;
+  margin: 0 auto;
+  background: #fff;
+  font-family: "font-2", sans-serif;
+}
+section .firstArticleContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+section .firstArticleContent .firstArticleDate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  font-size: 1.1rem;
+  position: relative;
+  padding: 60px 0px;
+}
+section .firstArticleContent .firstArticleDate::before {
+  content: "";
+  position: absolute;
+  width: 35%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.1529411765);
+  left: 0;
+  top: 50%;
+}
+section .firstArticleContent .firstArticleDate::after {
+  content: "";
+  position: absolute;
+  width: 35%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.1529411765);
+  right: 0;
+  top: 50%;
+}
+section .firstArticleContent .firstArticleTitle {
+  width: 80%;
+  max-width: 500px;
+  text-align: center;
+}
+section .firstArticleContent .firstArticleTitle h2 {
+  font-size: 3rem;
+  font-family: "font-1", sans-serif;
+  text-transform: uppercase;
+}
+section .firstArticleContent .firstArticleTitle p {
+  font-size: 0.9rem;
+  line-height: 40px;
+  font-style: italic;
+  padding: 30px 0px;
+}
+section .firstArticleContent .firstArticleImg {
+  background: url(../img/pic01.jpg) center/cover;
+  width: 80%;
+  height: 500px;
+}
+section .firstArticleContent button {
+  margin: 30px 0px;
 }/*# sourceMappingURL=index.css.map */

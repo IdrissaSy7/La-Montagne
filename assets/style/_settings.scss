@@ -17,6 +17,8 @@
 $color-1: #f3f3f3;
 $color-2: #ffffff3d;
 $color-3: #000;
+$color-4: #fff;
+$color-5: #00000027;
 
 @mixin center {
   display: flex;
@@ -34,4 +36,12 @@ body li {
 
 body a {
   text-decoration: none;
+}
+
+.fsButton {
+  text-transform: uppercase;
+  background: transparent;
+  border: 2px solid $color-3;
+  padding: 15px 40px;
+  font-family: "font-1", sans-serif;
 }
