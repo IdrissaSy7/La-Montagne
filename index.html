@@ -18,7 +18,7 @@
   </head>
   <body>
     <header>
-      <nav>
+      <nav id="nav">
         <ul>
           <li class="permHover">This is Massively</li>
           <li>Generic Page</li>
@@ -55,9 +55,9 @@
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius
           aspernatur deleniti repudiandae iure esse quam?
         </p>
-        <p class="mainHeaderButton">
-          <i class="fa-solid fa-arrow-down"></i>
-        </p>
+        <a href="#nav" class="mainHeaderButton"
+          ><i class="fa-solid fa-arrow-down"></i
+        ></a>
       </div>
     </header>
 
@@ -75,6 +75,73 @@
         <div class="firstArticleImg"></div>
         <button class="fsButton">Full Story</button>
       </article>
+
+      <div class="twoArticle">
+        <article>
+          <p>April 24, 2017</p>
+          <h2>Sed magna ipsum faucibus</h2>
+          <div class="twoArticleImg" id="img1"></div>
+          <p class="twoArticleText">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eos
+            dolorum fuga nulla optio dolore laborum.
+          </p>
+          <button class="fsButton">Full Story</button>
+        </article>
+
+        <article>
+          <p>April 22, 2017</p>
+          <h2>Primis eget imperdiet lorem</h2>
+          <div class="twoArticleImg" id="img2"></div>
+          <p class="twoArticleText">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eos
+            dolorum fuga nulla optio dolore laborum.
+          </p>
+          <button class="fsButton">Full Story</button>
+        </article>
+      </div>
     </section>
+
+    <footer>
+      <div class="footerLeft">
+        <form action="post">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" />
+          <label for="email">Email</label>
+          <input type="text" name="email" id="email" />
+          <label for="message">Message</label>
+          <input type="text" name="message" id="message" />
+        </form>
+        <button class="fsButton" id="sendButton">Send message</button>
+      </div>
+      <div class="footerRight">
+        <div>
+          <h3>Address</h3>
+          <p>1234 Somewhere Road #87257 Nashville, TN 000000-0000</p>
+        </div>
+        <div>
+          <h3>Phone</h3>
+          <p>(000) 000-0000</p>
+        </div>
+        <div>
+          <h3>Email</h3>
+          <p>info@untitled.ltd</p>
+        </div>
+        <div>
+          <h3>Social</h3>
+          <a href="http://www.twitter.com" target="_blank">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="http://www.facebook.com" target="_blank">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="http://www.instagram.com" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="http://www.github.com" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
