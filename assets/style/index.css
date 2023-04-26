@@ -57,12 +57,26 @@ header .mainHeader h1 {
   font-size: 5rem;
   max-width: 800px;
 }
+@media screen and (max-width: 767px) {
+  header .mainHeader h1 {
+    font-size: 1.5rem;
+    max-width: 400px;
+    width: 95%;
+  }
+}
 header .mainHeader p {
   font-family: "font-2", sans-serif;
   font-style: italic;
   text-align: center;
   font-size: 1.3rem;
   margin: 30px 0px;
+}
+@media screen and (max-width: 767px) {
+  header .mainHeader p {
+    font-size: 0.9rem;
+    max-width: 400px;
+    width: 95%;
+  }
 }
 header .mainHeader .mainHeaderButton {
   display: flex;
@@ -99,6 +113,12 @@ header nav ul li {
   padding: 0px 10px;
   font-size: 0.8rem;
   transition: 0.2s ease-in-out;
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  header nav ul li {
+    font-size: 0.6rem;
+  }
 }
 header nav ul li:hover {
   background: #f3f3f3;
@@ -111,6 +131,11 @@ header nav ul .permHover {
 header nav ul:last-child {
   justify-content: space-around;
   width: 25%;
+}
+@media screen and (max-width: 767px) {
+  header nav ul:last-child {
+    display: none;
+  }
 }
 header nav ul:last-child li {
   font-size: 1.2rem;
@@ -308,7 +333,7 @@ footer .footerRight div h3 {
   margin: 30px;
 }
 footer .footerRight div p {
-  max-width: 200px;
+  max-width: 250px;
 }
 footer .footerRight div a {
   display: flex;
