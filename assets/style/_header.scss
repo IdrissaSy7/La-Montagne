@@ -47,6 +47,14 @@ header {
       border: 2px solid $color-1;
       cursor: pointer;
       color: $color-1;
+
+      i {
+        transition: 0.2s ease-in-out;
+      }
+
+      &:hover i {
+        transform: translateY(10px);
+      }
     }
   }
 

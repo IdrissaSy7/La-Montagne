@@ -54,6 +54,13 @@ footer {
       color: $color-7;
       max-width: 220px;
       margin: 0px 30px 50px;
+
+      &:hover {
+        border-color: $color-9;
+        color: $color-1;
+        background: $color-9;
+        border-radius: 15px;
+      }
     }
   }
 
@@ -83,6 +90,12 @@ footer {
         border: 1px solid $color-5;
         margin-right: 2%;
         font-size: 0.9rem;
+        transition: 0.2s ease-in-out;
+
+        &:hover {
+          border-color: $color-5;
+          background: $color-5;
+        }
       }
 
       &:nth-child(1)::after,

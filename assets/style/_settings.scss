@@ -22,6 +22,8 @@ $color-4: #fff;
 $color-5: #00000027;
 $color-6: #e9e9e9;
 $color-7: #726b68;
+$color-8: #356739;
+$color-9: #939393;
 
 @mixin center {
   display: flex;
@@ -49,4 +51,11 @@ body a {
   font-family: "font-1", sans-serif;
   cursor: pointer;
   letter-spacing: 2px;
+  transition: 0.2s ease-in-out;
+
+  &:hover {
+    border-color: $color-8;
+    color: $color-1;
+    background: $color-8;
+  }
 }

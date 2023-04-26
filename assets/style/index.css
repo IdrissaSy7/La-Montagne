@@ -33,6 +33,12 @@ body a {
   font-family: "font-1", sans-serif;
   cursor: pointer;
   letter-spacing: 2px;
+  transition: 0.2s ease-in-out;
+}
+.fsButton:hover {
+  border-color: #356739;
+  color: #f3f3f3;
+  background: #356739;
 }
 
 header {
@@ -88,6 +94,12 @@ header .mainHeader .mainHeaderButton {
   border: 2px solid #f3f3f3;
   cursor: pointer;
   color: #f3f3f3;
+}
+header .mainHeader .mainHeaderButton i {
+  transition: 0.2s ease-in-out;
+}
+header .mainHeader .mainHeaderButton:hover i {
+  transform: translateY(10px);
 }
 header nav {
   display: flex;
@@ -322,6 +334,12 @@ footer .footerLeft #sendButton {
   max-width: 220px;
   margin: 0px 30px 50px;
 }
+footer .footerLeft #sendButton:hover {
+  border-color: #939393;
+  color: #f3f3f3;
+  background: #939393;
+  border-radius: 15px;
+}
 footer .footerRight div {
   display: flex;
   align-items: center;
@@ -347,6 +365,11 @@ footer .footerRight div a {
   border: 1px solid rgba(0, 0, 0, 0.1529411765);
   margin-right: 2%;
   font-size: 0.9rem;
+  transition: 0.2s ease-in-out;
+}
+footer .footerRight div a:hover {
+  border-color: rgba(0, 0, 0, 0.1529411765);
+  background: rgba(0, 0, 0, 0.1529411765);
 }
 footer .footerRight div:nth-child(1)::after, footer .footerRight div:nth-child(2)::after, footer .footerRight div:nth-child(3)::after {
   content: "";
