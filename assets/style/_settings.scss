@@ -33,6 +33,10 @@ $color-9: #939393;
 
 body {
   background: url(../img/bg.jpg) center/cover fixed;
+
+  @media screen and (max-width: 1300px) {
+    background-attachment: scroll;
+  }
 }
 
 body li {
