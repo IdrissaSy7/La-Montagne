@@ -74,6 +74,10 @@ header {
       height: 100%;
       cursor: pointer;
 
+      @media screen and (max-width: 767px) {
+        width: 100%;
+      }
+
       li {
         @include center;
         text-transform: uppercase;
@@ -84,6 +88,7 @@ header {
 
         @media screen and (max-width: 767px) {
           font-size: 0.6rem;
+          width: 100%;
         }
 
         &:hover {
