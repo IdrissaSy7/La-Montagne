@@ -20,14 +20,12 @@ body {
   body {
     background: none;
   }
-  body #bg {
-    background: url(../img/bg.jpg) top;
-    height: 100%;
-    width: 100%;
+  body::before {
+    content: "";
     position: fixed;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    background: url(../img/bg.jpg);
     z-index: -10;
   }
 }
