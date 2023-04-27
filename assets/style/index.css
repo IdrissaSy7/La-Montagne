@@ -18,8 +18,17 @@ body {
 }
 @media screen and (max-width: 1300px) {
   body {
-    background-attachment: fixed !important;
-    background-size: cover !important;
+    background: none;
+  }
+  body #bg {
+    background: url(../img/bg.jpg) top;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -10;
   }
 }
 
