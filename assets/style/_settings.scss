@@ -56,6 +56,7 @@ body a {
   cursor: pointer;
   letter-spacing: 2px;
   transition: 0.2s ease-in-out;
+  color: $color-3;
 
   &:hover {
     border-color: $color-8;

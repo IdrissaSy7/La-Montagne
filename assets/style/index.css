@@ -39,6 +39,7 @@ body a {
   cursor: pointer;
   letter-spacing: 2px;
   transition: 0.2s ease-in-out;
+  color: #000;
 }
 .fsButton:hover {
   border-color: #356739;
