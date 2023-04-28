@@ -146,7 +146,6 @@ header nav {
 header nav ul {
   display: flex;
   cursor: pointer;
-  height: 100%;
 }
 @media screen and (max-width: 767px) {
   header nav ul {
@@ -287,8 +286,8 @@ section .firstArticleContent .firstArticleTitle p {
 }
 @media screen and (max-width: 767px) {
   section .firstArticleContent .firstArticleTitle p {
-    font-size: 0.7rem;
-    width: 70%;
+    font-size: 0.8rem;
+    width: 100%;
     margin: 0 auto;
   }
 }
@@ -390,7 +389,7 @@ section .twoArticle article .twoArticleText {
 @media screen and (max-width: 767px) {
   section .twoArticle article .twoArticleText {
     width: 70%;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
 }
 
