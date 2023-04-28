@@ -124,6 +124,10 @@ header nav {
   width: 90%;
   height: 70px;
   letter-spacing: 1px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 header nav ul {
   display: flex;
