@@ -68,13 +68,22 @@ header .mainHeader {
   align-items: center;
   flex-direction: column;
   margin: auto;
+  animation: translateY 0.5s ease 0.3s forwards;
+  transform: translateY(-80px);
+  opacity: 0;
+}
+@keyframes translateY {
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
 header .mainHeader h1 {
   font-family: "font-1", sans-serif;
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 7px;
-  font-size: 5rem;
+  font-size: 4.5rem;
   max-width: 800px;
 }
 @media screen and (max-width: 767px) {
@@ -88,7 +97,7 @@ header .mainHeader p {
   font-family: "font-2", sans-serif;
   font-style: italic;
   text-align: center;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   margin: 30px 0px;
 }
 @media screen and (max-width: 767px) {
@@ -121,14 +130,21 @@ header nav {
   font-family: "font-1", sans-serif;
   background: rgba(255, 255, 255, 0.2392156863);
   margin: 0 auto;
-  width: 80%;
+  width: 90%;
   height: 70px;
   letter-spacing: 1px;
+  animation: hide 0.7s ease 0.6s forwards;
+  transform: translateY(50px);
+  opacity: 0;
+}
+@keyframes hide {
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 header nav ul {
   display: flex;
-  justify-content: space-between;
-  height: 100%;
   cursor: pointer;
 }
 @media screen and (max-width: 767px) {
@@ -141,8 +157,6 @@ header nav ul li {
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
-  padding: 0px 10px;
-  font-size: 0.8rem;
   transition: 0.2s ease-in-out;
   text-align: center;
 }
@@ -152,16 +166,23 @@ header nav ul li {
     width: 100%;
   }
 }
-header nav ul li:hover {
+header nav ul:first-child li {
+  padding: 0px 10px;
+  font-size: 0.8rem;
+}
+header nav ul:first-child li:hover {
   background: #f3f3f3;
   color: #000;
 }
-header nav ul .permHover {
+header nav ul:first-child li:first-child {
   background: #f3f3f3;
   color: #000;
+}
+header nav ul:first-child:hover li:not(:hover) {
+  background: none;
+  color: #f3f3f3;
 }
 header nav ul:last-child {
-  justify-content: space-around;
   width: 25%;
 }
 @media screen and (max-width: 767px) {
@@ -172,11 +193,9 @@ header nav ul:last-child {
 header nav ul:last-child li {
   font-size: 1.2rem;
   width: 100%;
-  padding: 0;
 }
 header nav ul:last-child li:hover {
   font-size: 2rem;
-  background: initial;
 }
 header nav ul:last-child li a {
   display: flex;
@@ -188,7 +207,7 @@ header nav ul:last-child li a {
 }
 
 section {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   background: #fff;
   font-family: "font-2", sans-serif;
@@ -222,9 +241,14 @@ section .firstArticleContent .firstArticleDate::before, section .firstArticleCon
   background: rgba(0, 0, 0, 0.1529411765);
   top: 50%;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 660px) {
   section .firstArticleContent .firstArticleDate::before, section .firstArticleContent .firstArticleDate::after {
-    width: 20%;
+    width: 30%;
+  }
+}
+@media screen and (max-width: 400px) {
+  section .firstArticleContent .firstArticleDate::before, section .firstArticleContent .firstArticleDate::after {
+    width: 25%;
   }
 }
 section .firstArticleContent .firstArticleDate::before {
@@ -370,7 +394,7 @@ section .twoArticle article .twoArticleText {
 }
 
 footer {
-  width: 80%;
+  width: 90%;
   background: #e9e9e9;
   margin: 40px auto 80px;
   display: flex;
@@ -419,7 +443,6 @@ footer .footerRight {
 footer .footerLeft form {
   display: flex;
   flex-direction: column;
-  width: 80%;
   margin: 50px 30px;
 }
 footer .footerLeft form input {
@@ -472,7 +495,8 @@ footer .footerRight div p {
 }
 @media screen and (max-width: 767px) {
   footer .footerRight div p {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+    max-width: 200px;
   }
 }
 footer .footerRight div a {

@@ -1,5 +1,5 @@
 footer {
-  width: 80%;
+  width: 90%;
   background: $color-6;
   margin: 40px auto 80px;
   display: flex;
@@ -48,7 +48,6 @@ footer {
     form {
       display: flex;
       flex-direction: column;
-      width: 80%;
       margin: 50px 30px;
 
       input {
@@ -108,7 +107,8 @@ footer {
         max-width: 250px;
 
         @media screen and (max-width: 767px) {
-          font-size: 0.8rem;
+          font-size: 0.9rem;
+          max-width: 200px;
         }
       }
 

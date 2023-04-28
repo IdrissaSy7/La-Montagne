@@ -1,5 +1,5 @@
 section {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   background: $color-4;
   font-family: "font-2", sans-serif;
@@ -29,8 +29,12 @@ section {
         background: $color-5;
         top: 50%;
 
-        @media screen and (max-width: 767px) {
-          width: 20%;
+        @media screen and (max-width: 660px) {
+          width: 30%;
+        }
+
+        @media screen and (max-width: 400px) {
+          width: 25%;
         }
       }
 
